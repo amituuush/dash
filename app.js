@@ -80,7 +80,7 @@ function initialize() {
   // setInterval that calls generateRandomSecond, which passes its Second to a setTimeout as time,
   // as callback to setTimeout, generate random index of cities, and get cities[i].coords, and pass to showMarker
 
-  var intervalID = window.setInterval(generateRandomSecond, 1000);
+  var intervalID = window.setInterval(generateRandomSecond, 250);
 
   function generateRandomSecond() {
     var sec = Math.floor(Math.random() * (seconds + 1));
